@@ -7,25 +7,25 @@ class ControlModule:
         """ Dummy constructor to use the Python Class as a namespace """
         pass
 
-    @staticmethod
+    @staticmethod # Hace que la función no necesite un argumento
     def generate_P() -> np.ndarray:
         """ Function that generates the probabilities (transition) matrix """
         ### TO BE COMPLETED BY THE STUDENTS ###
         ...
 
-    @staticmethod
+    @staticmethod  
     def generate_R() -> np.ndarray:
         """ Function that generates the rewards (costs) matrix """
         ### TO BE COMPLETED BY THE STUDENTS ###
         ...
 
-    @staticmethod
+    @staticmethod  
     def control_iteration() -> np.int32:
         """ Function that computes one control-iteration """
         ### TO BE COMPLETED BY THE STUDENTS ###
         ...
 
-    @staticmethod
+    @staticmethod  
     def control_loop(demand: np.ndarray, 
                      probs: np.ndarray,
                      n_states: np.int32, 

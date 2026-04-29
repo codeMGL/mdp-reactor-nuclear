@@ -53,6 +53,8 @@ def main() -> None:
                       reactor.probabilities['maintain'], 
                       reactor.probabilities['increase']], dtype=np.float64)
     
+    matriz_P = ControlModule.generate_P(probs)
+    
     # Make a radar-plot with the reactor probabilities
     plot_reactor_as_radar(probs=probs)
     
@@ -62,6 +64,7 @@ def main() -> None:
     # Define the number of MDP's states, actions and the discount factor (gamma)
     n_states  = 100
     n_actions = 3
+    
 
     # Get the response time-series (answer to the demand time-series)
     response  = ControlModule.control_loop(demand=demand, 

@@ -53,13 +53,17 @@ def main() -> None:
                       reactor.probabilities['maintain'], 
                       reactor.probabilities['increase']], dtype=np.float64)
     
+    # Calculamos la matriz de probabilidades P
     matriz_P = ControlModule.generate_P(probs)
     
     # Make a radar-plot with the reactor probabilities
-    plot_reactor_as_radar(probs=probs)
+    # plot_reactor_as_radar(probs=probs)
     
     # Generate a random power demand
     demand = generate_demand(n_samples=512)
+    
+    # Calculamos la matriz de recompensas R a partir de la demanda
+    matriz_R = ControlModule.generate_R(50, demand)
 
     # Define the number of MDP's states, actions and the discount factor (gamma)
     n_states  = 100

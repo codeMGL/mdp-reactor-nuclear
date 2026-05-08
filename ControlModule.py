@@ -18,39 +18,73 @@ class ControlModule:
         probs_decrease = probs[0]
         probs_maintain = probs[1]
         probs_increase = probs[2]
-
         # ---------------- DECREASE ----------------
-        for i in range(10):
-            for j in range(10):
-                if i == j:
-                    matrix_P[0][i][j] = probs_decrease[2]
-                elif i - 1 == j:
-                    matrix_P[0][i][j] = probs_decrease[1]
-                elif i - 2 == j:
-                    matrix_P[0][i][j] = probs_decrease[0]
+        for estado_inicial in range(10):
+            for estado_final in range(10):
+                if estado_inicial == estado_final:
+                    matrix_P[0][estado_inicial][estado_final] = probs_decrease[2]
+                elif estado_inicial - 1 == estado_final:
+                    matrix_P[0][estado_inicial][estado_final] = probs_decrease[1]
+                elif estado_inicial - 2 == estado_final:
+                    matrix_P[0][estado_inicial][estado_final] = probs_decrease[0]
 
         # ---------------- MAINTAIN ----------------
-        for i in range(10):
-            for j in range(10):
-                if i == j:
-                    matrix_P[1][i][j] = probs_maintain[1]
-                elif i + 1 == j:
-                    matrix_P[1][i][j] = probs_maintain[2]
-                elif i - 1 == j:
-                    matrix_P[1][i][j] = probs_maintain[0]
+        for estado_inicial in range(10):
+            for estado_final in range(10):
+                if estado_inicial == estado_final:
+                    matrix_P[1][estado_inicial][estado_final] = probs_maintain[1]
+                elif estado_inicial + 1 == estado_final:
+                    matrix_P[1][estado_inicial][estado_final] = probs_maintain[2]
+                elif estado_inicial - 1 == estado_final:
+                    matrix_P[1][estado_inicial][estado_final] = probs_maintain[0]
 
         # ---------------- INCREASE ----------------
-        for i in range(10):
-            for j in range(10):
-                if i == j:
-                    matrix_P[2][i][j] = probs_increase[0]
-                elif i + 1 == j:
-                    matrix_P[2][i][j] = probs_increase[1]
-                elif i + 2 == j:
-                    matrix_P[2][i][j] = probs_increase[2]
+        for estado_inicial in range(10):
+            for estado_final in range(10):
+                if estado_inicial == estado_final:
+                    matrix_P[2][estado_inicial][estado_final] = probs_increase[0]
+                elif estado_inicial + 1 == estado_final:
+                    matrix_P[2][estado_inicial][estado_final] = probs_increase[1]
+                elif estado_inicial + 2 == estado_final:
+                    matrix_P[2][estado_inicial][estado_final] = probs_increase[2]
 
         print("Probabilidades:\n")
         print(matrix_P)
+        """
+        [[[0.8   0.    0.    0.    0.    0.    0.    0.    0.    0.   ]
+        [0.025 0.8   0.    0.    0.    0.    0.    0.    0.    0.   ]
+        [0.175 0.025 0.8   0.    0.    0.    0.    0.    0.    0.   ]
+        [0.    0.175 0.025 0.8   0.    0.    0.    0.    0.    0.   ]
+        [0.    0.    0.175 0.025 0.8   0.    0.    0.    0.    0.   ]
+        [0.    0.    0.    0.175 0.025 0.8   0.    0.    0.    0.   ]
+        [0.    0.    0.    0.    0.175 0.025 0.8   0.    0.    0.   ]
+        [0.    0.    0.    0.    0.    0.175 0.025 0.8   0.    0.   ]
+        [0.    0.    0.    0.    0.    0.    0.175 0.025 0.8   0.   ]
+        [0.    0.    0.    0.    0.    0.    0.    0.175 0.025 0.8  ]]
+
+        [[0.6   0.35  0.    0.    0.    0.    0.    0.    0.    0.   ]
+        [0.05  0.6   0.35  0.    0.    0.    0.    0.    0.    0.   ]
+        [0.    0.05  0.6   0.35  0.    0.    0.    0.    0.    0.   ]
+        [0.    0.    0.05  0.6   0.35  0.    0.    0.    0.    0.   ]
+        [0.    0.    0.    0.05  0.6   0.35  0.    0.    0.    0.   ]
+        [0.    0.    0.    0.    0.05  0.6   0.35  0.    0.    0.   ]
+        [0.    0.    0.    0.    0.    0.05  0.6   0.35  0.    0.   ]
+        [0.    0.    0.    0.    0.    0.    0.05  0.6   0.35  0.   ]
+        [0.    0.    0.    0.    0.    0.    0.    0.05  0.6   0.35 ]
+        [0.    0.    0.    0.    0.    0.    0.    0.    0.05  0.6  ]]
+
+        [[0.    0.2   0.8   0.    0.    0.    0.    0.    0.    0.   ]
+        [0.    0.    0.2   0.8   0.    0.    0.    0.    0.    0.   ]
+        [0.    0.    0.    0.2   0.8   0.    0.    0.    0.    0.   ]
+        [0.    0.    0.    0.    0.2   0.8   0.    0.    0.    0.   ]
+        [0.    0.    0.    0.    0.    0.2   0.8   0.    0.    0.   ]
+        [0.    0.    0.    0.    0.    0.    0.2   0.8   0.    0.   ]
+        [0.    0.    0.    0.    0.    0.    0.    0.2   0.8   0.   ]
+        [0.    0.    0.    0.    0.    0.    0.    0.    0.2   0.8  ]
+        [0.    0.    0.    0.    0.    0.    0.    0.    0.    0.2  ]
+        [0.    0.    0.    0.    0.    0.    0.    0.    0.    0.   ]]]
+        """
+
         return matrix_P
 
     @staticmethod
@@ -97,7 +131,7 @@ class ControlModule:
         # cambiar a 100x100
         # quitar DEBUGGING
         # son recompensas, poner costes negativos
-        
+
         # Se calcula la matriz de distancias entre el estado actual s y el estado futuro s'
         # Aunque no se pueden alcanzar algunos estados (ej, pasar de s a s + 40),
         # como en la matriz de probabilidades esa probabilidad es nula, el coste es indiferente

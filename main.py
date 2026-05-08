@@ -52,19 +52,20 @@ def main() -> None:
     probs = np.array([reactor.probabilities['decrease'], 
                       reactor.probabilities['maintain'], 
                       reactor.probabilities['increase']], dtype=np.float64)
-    
+
     matriz_P = ControlModule.generate_P(probs)
-    
+
     # Make a radar-plot with the reactor probabilities
-    plot_reactor_as_radar(probs=probs)
-    
+    # plot_reactor_as_radar(probs=probs)
+
     # Generate a random power demand
     demand = generate_demand(n_samples=512)
+
+    matriz_R = ControlModule.generate_R(0, [0.02])
 
     # Define the number of MDP's states, actions and the discount factor (gamma)
     n_states  = 100
     n_actions = 3
-    
 
     # Get the response time-series (answer to the demand time-series)
     response  = ControlModule.control_loop(demand=demand, 
@@ -72,7 +73,7 @@ def main() -> None:
                                            n_states=n_states,
                                            n_actions=n_actions,
                                            gamma=gamma)
-    
+
     # Plot the original power demand
     plot_demand(demand=demand)
 

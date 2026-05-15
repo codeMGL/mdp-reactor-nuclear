@@ -70,7 +70,6 @@ class ControlModule:
                     for end_state in range(n_states):
                         matrix_P[action][initial_state][end_state] = 1 / n_states
 
-        check_stochastic(matrix_P)               
         return matrix_P
 
     @staticmethod
@@ -78,7 +77,7 @@ class ControlModule:
         """Function that generates the rewards (costs) matrix"""
         # Initialization of the Rewards matrix
         matrix_R = np.zeros((3, n_states, n_states), dtype=np.float64)
-
+        # Method explained at the memory of the project
         # ---------------- DECREASE ----------------
         for estado_inicial in range(n_states):
             for estado_final in range(n_states):
@@ -180,25 +179,3 @@ class ControlModule:
             response[t] = current_state / n_states
 
         return response
-
-
-import numpy as np
-
-
-def check_stochastic(P, tol=1e-6):
-    P = np.array(P)
-    assert P.ndim == 3, f"P debe ser (A, S, S), tiene forma {P.shape}"
-    A, S, _ = P.shape
-    ok = True
-    for a in range(A):
-        row_sums = P[a].sum(axis=1)
-        bad = np.where(np.abs(row_sums - 1.0) > tol)[0]
-        if len(bad) > 0:
-            ok = False
-            for s in bad:
-                print(f"  Acción {a}, Estado {s}: suma = {row_sums[s]:.8f}")
-    if ok:
-        print("✅ Matriz estocástica: todas las filas suman 1.")
-    else:
-        print("❌ Matriz NO estocástica.")
-    return ok

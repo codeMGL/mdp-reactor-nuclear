@@ -1,0 +1,24 @@
+{
+    "model": "AVERAGE-REACTOR",
+    "effective_section": 5,
+    "neutron_flux": 5e13,
+    "core_volume": 9.42e6,
+    "fision_energy": 3.2e-11,
+    "probabilities": {
+        "decrease": [
+            1,
+            1,
+            1
+        ],
+        "maintain": [
+            1,
+            1,
+            1
+        ],
+        "increase": [
+            1,
+            1,
+            1
+        ]
+    }
+}

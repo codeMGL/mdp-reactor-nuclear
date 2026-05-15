@@ -136,7 +136,7 @@ class ControlModule:
     @staticmethod
     def generate_R(demand_t: np.float64, n_states: np.int32 = 100) -> np.ndarray:
         """Function that generates the rewards (costs) matrix"""
-        demand = np.float64(demand_t)
+        demand = np.float64(demand_t) # Debug
         print("Demanda:", demand)
 
         matrix_R = np.zeros((3, n_states, n_states), dtype=np.float64) # (3x)100x100
@@ -324,7 +324,7 @@ class ControlModule:
             ControlModule._demand_t = np.float64(demand[t])
             ControlModule._current_state = current_state 
 
-            ControlModule._R = ControlModule.generate_R(demand_t = ControlModule._demand_t, n_states) # esta demanda concreta.
+            ControlModule._R = ControlModule.generate_R(ControlModule._demand_t, n_states) # esta demanda concreta.
             action = ControlModule.control_iteration(P= ControlModule._P, R= ControlModule._R, current_state = ControlModule._current_state, gamma=gamma)
 
             state_increment = np.random.choice( a=action_deltas[action], p=probs[action])

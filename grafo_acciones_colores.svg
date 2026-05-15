@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="950" viewBox="0 0 2200 950">
+<defs>
+
+    <marker id="arrow-d" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#d62728"/>
+    </marker>
+
+    <marker id="arrow-m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#000000"/>
+    </marker>
+
+    <marker id="arrow-i" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2ca02c"/>
+    </marker>
+</defs>
+<rect x="0" y="0" width="2200" height="950" fill="white"/>
+<text x="40" y="45" font-family="Times New Roman, serif" font-size="28" fill="#111">Acciones por flecha: d = rojo, m = negro, i = verde</text>
+<path d="M 113.4,472.0 C -2.5,322.0 282.5,322.0 166.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="140.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 113.4,472.0 C -52.8,269.0 332.9,269.0 166.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="140.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 113.4,472.0 C -103.2,216.0 383.2,216.0 166.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="140.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 140.0,500.0 Q 240.0,445.0 340.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="240.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 140.0,500.0 Q 240.0,405.0 340.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="240.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 140.0,500.0 Q 340.0,365.0 540.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="340.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 340.0,500.0 Q 240.0,555.0 140.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="240.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 340.0,500.0 Q 240.0,595.0 140.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="240.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 313.4,472.0 C 197.5,322.0 482.5,322.0 366.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="340.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 313.4,472.0 C 147.2,269.0 532.9,269.0 366.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="340.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 313.4,472.0 C 96.8,216.0 583.2,216.0 366.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="340.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 340.0,500.0 Q 440.0,445.0 540.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="440.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 340.0,500.0 Q 440.0,405.0 540.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="440.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 340.0,500.0 Q 540.0,365.0 740.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="540.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 540.0,500.0 Q 340.0,595.0 140.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="340.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 540.0,500.0 Q 440.0,555.0 340.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="440.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 540.0,500.0 Q 440.0,595.0 340.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="440.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 513.4,472.0 C 397.5,322.0 682.5,322.0 566.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="540.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 513.4,472.0 C 347.1,269.0 732.9,269.0 566.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="540.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 513.4,472.0 C 296.8,216.0 783.2,216.0 566.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="540.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 540.0,500.0 Q 640.0,445.0 740.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="640.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 540.0,500.0 Q 640.0,405.0 740.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="640.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 540.0,500.0 Q 740.0,365.0 940.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="740.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 740.0,500.0 Q 540.0,595.0 340.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="540.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 740.0,500.0 Q 640.0,555.0 540.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="640.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 740.0,500.0 Q 640.0,595.0 540.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="640.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 713.4,472.0 C 597.5,322.0 882.5,322.0 766.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="740.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 713.4,472.0 C 547.1,269.0 932.9,269.0 766.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="740.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 713.4,472.0 C 496.8,216.0 983.2,216.0 766.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="740.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 740.0,500.0 Q 840.0,445.0 940.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="840.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 740.0,500.0 Q 840.0,405.0 940.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="840.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 740.0,500.0 Q 940.0,365.0 1140.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="940.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 940.0,500.0 Q 740.0,595.0 540.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="740.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 940.0,500.0 Q 840.0,555.0 740.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="840.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 940.0,500.0 Q 840.0,595.0 740.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="840.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 913.4,472.0 C 797.5,322.0 1082.5,322.0 966.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="940.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 913.4,472.0 C 747.1,269.0 1132.8,269.0 966.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="940.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 913.4,472.0 C 696.8,216.0 1183.2,216.0 966.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="940.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 940.0,500.0 Q 1040.0,445.0 1140.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1040.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 940.0,500.0 Q 1040.0,405.0 1140.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1040.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 940.0,500.0 Q 1140.0,365.0 1340.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1140.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1140.0,500.0 Q 940.0,595.0 740.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="940.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1140.0,500.0 Q 1040.0,555.0 940.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1040.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1140.0,500.0 Q 1040.0,595.0 940.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1040.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1113.4,472.0 C 997.5,322.0 1282.5,322.0 1166.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1140.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1113.4,472.0 C 947.1,269.0 1332.8,269.0 1166.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1140.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1113.4,472.0 C 896.8,216.0 1383.2,216.0 1166.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1140.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1140.0,500.0 Q 1240.0,445.0 1340.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1240.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1140.0,500.0 Q 1240.0,405.0 1340.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1240.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1140.0,500.0 Q 1340.0,365.0 1540.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1340.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1340.0,500.0 Q 1140.0,595.0 940.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1140.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1340.0,500.0 Q 1240.0,555.0 1140.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1240.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1340.0,500.0 Q 1240.0,595.0 1140.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1240.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1313.4,472.0 C 1197.5,322.0 1482.5,322.0 1366.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1340.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1313.4,472.0 C 1147.2,269.0 1532.8,269.0 1366.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1340.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1313.4,472.0 C 1096.8,216.0 1583.2,216.0 1366.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1340.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1340.0,500.0 Q 1440.0,445.0 1540.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1440.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1340.0,500.0 Q 1440.0,405.0 1540.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1440.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1340.0,500.0 Q 1540.0,365.0 1740.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1540.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1540.0,500.0 Q 1340.0,595.0 1140.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1340.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1540.0,500.0 Q 1440.0,555.0 1340.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1440.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1540.0,500.0 Q 1440.0,595.0 1340.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1440.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1513.4,472.0 C 1397.5,322.0 1682.5,322.0 1566.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1540.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1513.4,472.0 C 1347.2,269.0 1732.8,269.0 1566.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1540.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1513.4,472.0 C 1296.8,216.0 1783.2,216.0 1566.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1540.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1540.0,500.0 Q 1640.0,445.0 1740.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1640.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1540.0,500.0 Q 1640.0,405.0 1740.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1640.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1540.0,500.0 Q 1740.0,365.0 1940.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1740.0" y="382.7" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1740.0,500.0 Q 1540.0,595.0 1340.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1540.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1740.0,500.0 Q 1640.0,555.0 1540.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1640.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1740.0,500.0 Q 1640.0,595.0 1540.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1640.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1713.4,472.0 C 1597.5,322.0 1882.5,322.0 1766.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1740.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1713.4,472.0 C 1547.2,269.0 1932.8,269.0 1766.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1740.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1713.4,472.0 C 1496.8,216.0 1983.2,216.0 1766.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1740.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1740.0,500.0 Q 1840.0,445.0 1940.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1840.0" y="442.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1740.0,500.0 Q 1840.0,405.0 1940.0,500.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1840.0" y="416.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<path d="M 1940.0,500.0 Q 1740.0,595.0 1540.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1740.0" y="598.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1940.0,500.0 Q 1840.0,555.0 1740.0,500.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1840.0" y="563.9" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1940.0,500.0 Q 1840.0,595.0 1740.0,500.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1840.0" y="601.1" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1913.4,472.0 C 1797.5,322.0 2082.5,322.0 1966.6,472.0" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="1940.0" y="304.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#d62728">d</text>
+<path d="M 1913.4,472.0 C 1747.2,269.0 2132.8,269.0 1966.6,472.0" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="1940.0" y="233.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#000000">m</text>
+<path d="M 1913.4,472.0 C 1696.8,216.0 2183.2,216.0 1966.6,472.0" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="1940.0" y="162.0" text-anchor="middle" font-family="Times New Roman, serif" font-size="24" fill="#2ca02c">i</text>
+<circle cx="140" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="140" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">1</text>
+<circle cx="340" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="340" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">2</text>
+<circle cx="540" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="540" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">3</text>
+<circle cx="740" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="740" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">4</text>
+<circle cx="940" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="940" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">5</text>
+<circle cx="1140" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1140" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">6</text>
+<circle cx="1340" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1340" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">7</text>
+<circle cx="1540" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1540" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">8</text>
+<circle cx="1740" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1740" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">9</text>
+<circle cx="1940" cy="500" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1940" y="510" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">10</text>
+</svg>

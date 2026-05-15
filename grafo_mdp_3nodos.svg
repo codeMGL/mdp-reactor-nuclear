@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<defs>
+  <marker id="arrow-d" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L6,3 L0,6 z" fill="#d62728"/>
+  </marker>
+  <marker id="arrow-m" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L6,3 L0,6 z" fill="#000000"/>
+  </marker>
+  <marker id="arrow-i" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L6,3 L0,6 z" fill="#2ca02c"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="1400" height="760" fill="white"/>
+
+<!-- Titulo centrado -->
+<text x="700" y="45" text-anchor="middle" font-family="Times New Roman, serif" font-size="28" fill="#111">Grafo simplificado para 10 estados</text>
+
+<!-- SELF-LOOPS NODO 1 (cx=200, cy=460) -->
+<!-- m (mas cercano, pico y=340) -->
+<path d="M 173.4,432 C 80,340 320,340 226.6,432" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="116" y="360" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<!-- i (medio, pico y=250) -->
+<path d="M 173.4,432 C 80,250 320,250 226.6,432" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="108" y="270" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+<!-- d (mas alejado, pico y=160) -->
+<path d="M 173.4,432 C 80,160 320,160 226.6,432" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="108" y="180" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- 1->2 m (ctrl y=415, midpoint y=437) -->
+<path d="M 200,460 Q 400,415 600,460" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="400" y="432" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<!-- 1->2 i (ctrl y=335, midpoint y=396) -->
+<path d="M 200,460 Q 400,335 600,460" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="400" y="393" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+<!-- 1->3 i 2 pasos (ctrl y=310, label en t=0.35: x~480, y~405) -->
+<path d="M 200,460 Q 600,310 1000,460" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="460" y="356" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<!-- SELF-LOOPS NODO 2 (cx=600, cy=460) -->
+<path d="M 573.4,432 C 480,340 720,340 626.6,432" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="516" y="360" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<path d="M 573.4,432 C 480,250 720,250 626.6,432" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="508" y="270" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+<path d="M 573.4,432 C 480,160 720,160 626.6,432" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="508" y="180" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- 2->1 m (ctrl y=505, midpoint y=482) -->
+<path d="M 600,460 Q 400,505 200,460" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="400" y="501" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<!-- 2->1 d (ctrl y=580, midpoint y=520) -->
+<path d="M 600,460 Q 400,580 200,460" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="400" y="577" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- 2->3 m (ctrl y=415, midpoint y=437) -->
+<path d="M 600,460 Q 800,415 1000,460" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="800" y="432" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<!-- 2->3 i (ctrl y=335, midpoint y=396) -->
+<path d="M 600,460 Q 800,335 1000,460" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="800" y="393" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<!-- SELF-LOOPS NODO 3 (cx=1000, cy=460) -->
+<path d="M 973.4,432 C 880,340 1120,340 1026.6,432" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="916" y="360" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<path d="M 973.4,432 C 880,250 1120,250 1026.6,432" fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="908" y="270" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+<path d="M 973.4,432 C 880,160 1120,160 1026.6,432" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="908" y="180" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- 3->2 m (ctrl y=505) -->
+<path d="M 1000,460 Q 800,505 600,460" fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="800" y="501" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+<!-- 3->2 d (ctrl y=580) -->
+<path d="M 1000,460 Q 800,580 600,460" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="800" y="577" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- 3->1 d 2 pasos (ctrl y=648, midpoint y=554) -->
+<path d="M 1000,460 Q 600,648 200,460" fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="600" y="644" text-anchor="middle" font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- NODOS -->
+<circle cx="200" cy="460" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="200" y="470" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">1</text>
+<circle cx="600" cy="460" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="600" y="470" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">2</text>
+<circle cx="1000" cy="460" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1000" y="470" text-anchor="middle" font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">3</text>
+</svg>

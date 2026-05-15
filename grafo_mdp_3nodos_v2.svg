@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<defs>
+  <marker id="arrow-d" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L6,3 L0,6 z" fill="#d62728"/>
+  </marker>
+  <marker id="arrow-m" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L6,3 L0,6 z" fill="#000000"/>
+  </marker>
+  <marker id="arrow-i" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L6,3 L0,6 z" fill="#2ca02c"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="1400" height="760" fill="white"/>
+
+<!-- Titulo centrado -->
+<text x="700" y="45" text-anchor="middle" font-family="Times New Roman, serif" font-size="28" fill="#111">Grafo simplificado para 10 estados</text>
+
+<!-- ================================================================
+     Nodos: cy=460, r=28
+     Arcos inter-nodo: start/end en el borde del circulo (cx +/- r, cy)
+     Arcos derecha: M(cx_src+28, 460) Q(mid, ctrl_y) (cx_dst-28, 460)
+     Arcos izquierda: M(cx_src-28, 460) Q(mid, ctrl_y) (cx_dst+28, 460)
+     Label: punto medio exacto del bezier t=0.5
+     ================================================================ -->
+
+<!-- ===== SELF-LOOPS NODO 1 (cx=200) =====
+     Attachment: (173.4, 432) -> (226.6, 432)  [fuera del circulo -> flecha visible]
+     ctrl_y: m=310 (pico~341), i=196 (pico~255), d=83 (pico~170)
+     Label t=0.25 en el arco: x~155, y segun ctrl_y                     -->
+
+<!-- m (pico ~341) -->
+<path d="M 173.4,432 C 80,310 320,310 226.6,432"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="143" y="363" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<!-- i (pico ~255) -->
+<path d="M 173.4,432 C 80,196 320,196 226.6,432"
+      fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="143" y="299" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<!-- d (pico ~170) -->
+<path d="M 173.4,432 C 80,83 320,83 226.6,432"
+      fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="143" y="235" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- ===== 1->2 arcos (arriba)
+     Start=(228,460), End=(572,460)
+     m: ctrl(400,415)  label t=0.5: x=400, y=(460+830+460)/4=437
+     i: ctrl(400,335)  label t=0.5: x=400, y=(460+670+460)/4=397      -->
+
+<path d="M 228,460 Q 400,415 572,460"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="400" y="434" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<path d="M 228,460 Q 400,335 572,460"
+      fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="400" y="394" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<!-- ===== 1->3 i, 2 pasos (arriba)
+     Start=(228,460), End=(972,460), ctrl(600,310)
+     Label t=0.3: x~451, y~397                                         -->
+<path d="M 228,460 Q 600,310 972,460"
+      fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="451" y="394" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<!-- ===== SELF-LOOPS NODO 2 (cx=600) ===== -->
+
+<path d="M 573.4,432 C 480,310 720,310 626.6,432"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="543" y="363" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<path d="M 573.4,432 C 480,196 720,196 626.6,432"
+      fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="543" y="299" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<path d="M 573.4,432 C 480,83 720,83 626.6,432"
+      fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="543" y="235" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- ===== 2->1 arcos (abajo)
+     Start=(572,460), End=(228,460)
+     m: ctrl(400,505)  label t=0.5: x=400, y=(460+1010+460)/4=482
+     d: ctrl(400,580)  label t=0.5: x=400, y=(460+1160+460)/4=520     -->
+
+<path d="M 572,460 Q 400,505 228,460"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="400" y="500" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<path d="M 572,460 Q 400,580 228,460"
+      fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="400" y="578" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- ===== 2->3 arcos (arriba)
+     Start=(628,460), End=(972,460)
+     m: ctrl(800,415)  label: x=800, y=437
+     i: ctrl(800,335)  label: x=800, y=397                            -->
+
+<path d="M 628,460 Q 800,415 972,460"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="800" y="434" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<path d="M 628,460 Q 800,335 972,460"
+      fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="800" y="394" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<!-- ===== SELF-LOOPS NODO 3 (cx=1000) ===== -->
+
+<path d="M 973.4,432 C 880,310 1120,310 1026.6,432"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="943" y="363" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<path d="M 973.4,432 C 880,196 1120,196 1026.6,432"
+      fill="none" stroke="#2ca02c" stroke-width="3.5" marker-end="url(#arrow-i)"/>
+<text x="943" y="299" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#2ca02c">i</text>
+
+<path d="M 973.4,432 C 880,83 1120,83 1026.6,432"
+      fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="943" y="235" text-anchor="end"
+      font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- ===== 3->2 arcos (abajo)
+     Start=(972,460), End=(628,460)
+     m: ctrl(800,505)  label: x=800, y=482
+     d: ctrl(800,580)  label: x=800, y=520                            -->
+
+<path d="M 972,460 Q 800,505 628,460"
+      fill="none" stroke="#000000" stroke-width="3.5" marker-end="url(#arrow-m)"/>
+<text x="800" y="500" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#000000">m</text>
+
+<path d="M 972,460 Q 800,580 628,460"
+      fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="800" y="578" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- ===== 3->1 d, 2 pasos (abajo)
+     Start=(972,460), End=(228,460), ctrl(600,648)
+     label t=0.5: x=(972+1200+228)/4=600, y=(460+1296+460)/4=554      -->
+
+<path d="M 972,460 Q 600,648 228,460"
+      fill="none" stroke="#d62728" stroke-width="3.5" marker-end="url(#arrow-d)"/>
+<text x="600" y="644" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="22" fill="#d62728">d</text>
+
+<!-- ===== NODOS (al final para cubrir solapamiento de flechas) ===== -->
+<circle cx="200" cy="460" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="200" y="470" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">1</text>
+
+<circle cx="600" cy="460" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="600" y="470" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">2</text>
+
+<circle cx="1000" cy="460" r="28" fill="#d9e8ff" stroke="#111" stroke-width="3"/>
+<text x="1000" y="470" text-anchor="middle"
+      font-family="Times New Roman, serif" font-size="26" font-weight="bold" fill="#111">3</text>
+</svg>

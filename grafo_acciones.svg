@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2900" height="900" viewBox="0 0 2900 900">
+
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L12,6 L0,12 z" fill="#111"/>
+  </marker>
+  <style>
+    text { font-family: "Times New Roman", serif; fill: #111; }
+    .node { fill: #dbeafe; stroke: #111; stroke-width: 2.2; }
+    .edge { fill: none; stroke: #111; stroke-width: 2.1; marker-end: url(#arrow); }
+    .label { font-size: 18px; }
+    .nlabel { font-size: 22px; font-weight: 700; }
+    .title { font-size: 24px; }
+  </style>
+</defs>
+
+<text x="80" y="50" class="title">Grafo dirigido en línea: desde n se puede ir a n-2, n-1, n, n+1, n+2</text>
+<path class="edge" d="M 152 435 C 152 280, 285 280, 285 435"/>
+<text class="label" x="205.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 170 435 C 297.5 385, 297.5 385, 425 435"/>
+<text class="label" x="297.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 170 435 C 425.0 320, 425.0 320, 680 435"/>
+<text class="label" x="425.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 425 435 C 297.5 555, 297.5 555, 170 435"/>
+<text class="label" x="297.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 407 435 C 407 280, 540 280, 540 435"/>
+<text class="label" x="460.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 425 435 C 552.5 385, 552.5 385, 680 435"/>
+<text class="label" x="552.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 425 435 C 680.0 320, 680.0 320, 935 435"/>
+<text class="label" x="680.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 680 435 C 425.0 620, 425.0 620, 170 435"/>
+<text class="label" x="425.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 680 435 C 552.5 555, 552.5 555, 425 435"/>
+<text class="label" x="552.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 662 435 C 662 280, 795 280, 795 435"/>
+<text class="label" x="715.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 680 435 C 807.5 385, 807.5 385, 935 435"/>
+<text class="label" x="807.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 680 435 C 935.0 320, 935.0 320, 1190 435"/>
+<text class="label" x="935.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 935 435 C 680.0 620, 680.0 620, 425 435"/>
+<text class="label" x="680.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 935 435 C 807.5 555, 807.5 555, 680 435"/>
+<text class="label" x="807.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 917 435 C 917 280, 1050 280, 1050 435"/>
+<text class="label" x="970.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 935 435 C 1062.5 385, 1062.5 385, 1190 435"/>
+<text class="label" x="1062.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 935 435 C 1190.0 320, 1190.0 320, 1445 435"/>
+<text class="label" x="1190.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 1190 435 C 935.0 620, 935.0 620, 680 435"/>
+<text class="label" x="935.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 1190 435 C 1062.5 555, 1062.5 555, 935 435"/>
+<text class="label" x="1062.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 1172 435 C 1172 280, 1305 280, 1305 435"/>
+<text class="label" x="1225.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 1190 435 C 1317.5 385, 1317.5 385, 1445 435"/>
+<text class="label" x="1317.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 1190 435 C 1445.0 320, 1445.0 320, 1700 435"/>
+<text class="label" x="1445.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 1445 435 C 1190.0 620, 1190.0 620, 935 435"/>
+<text class="label" x="1190.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 1445 435 C 1317.5 555, 1317.5 555, 1190 435"/>
+<text class="label" x="1317.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 1427 435 C 1427 280, 1560 280, 1560 435"/>
+<text class="label" x="1480.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 1445 435 C 1572.5 385, 1572.5 385, 1700 435"/>
+<text class="label" x="1572.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 1445 435 C 1700.0 320, 1700.0 320, 1955 435"/>
+<text class="label" x="1700.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 1700 435 C 1445.0 620, 1445.0 620, 1190 435"/>
+<text class="label" x="1445.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 1700 435 C 1572.5 555, 1572.5 555, 1445 435"/>
+<text class="label" x="1572.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 1682 435 C 1682 280, 1815 280, 1815 435"/>
+<text class="label" x="1735.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 1700 435 C 1827.5 385, 1827.5 385, 1955 435"/>
+<text class="label" x="1827.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 1700 435 C 1955.0 320, 1955.0 320, 2210 435"/>
+<text class="label" x="1955.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 1955 435 C 1700.0 620, 1700.0 620, 1445 435"/>
+<text class="label" x="1700.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 1955 435 C 1827.5 555, 1827.5 555, 1700 435"/>
+<text class="label" x="1827.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 1937 435 C 1937 280, 2070 280, 2070 435"/>
+<text class="label" x="1990.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 1955 435 C 2082.5 385, 2082.5 385, 2210 435"/>
+<text class="label" x="2082.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 1955 435 C 2210.0 320, 2210.0 320, 2465 435"/>
+<text class="label" x="2210.0" y="304.0" text-anchor="middle">i</text>
+<path class="edge" d="M 2210 435 C 1955.0 620, 1955.0 620, 1700 435"/>
+<text class="label" x="1955.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 2210 435 C 2082.5 555, 2082.5 555, 1955 435"/>
+<text class="label" x="2082.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 2192 435 C 2192 280, 2325 280, 2325 435"/>
+<text class="label" x="2245.0" y="262.0" text-anchor="middle">d, m, i</text>
+<path class="edge" d="M 2210 435 C 2337.5 385, 2337.5 385, 2465 435"/>
+<text class="label" x="2337.5" y="369.0" text-anchor="middle">m, i</text>
+<path class="edge" d="M 2465 435 C 2210.0 620, 2210.0 620, 1955 435"/>
+<text class="label" x="2210.0" y="604.0" text-anchor="middle">d</text>
+<path class="edge" d="M 2465 435 C 2337.5 555, 2337.5 555, 2210 435"/>
+<text class="label" x="2337.5" y="539.0" text-anchor="middle">d, m</text>
+<path class="edge" d="M 2447 435 C 2447 280, 2580 280, 2580 435"/>
+<text class="label" x="2500.0" y="262.0" text-anchor="middle">d, m, i</text>
+<circle class="node" cx="170" cy="470" r="30"/>
+<text class="nlabel" x="170" y="478" text-anchor="middle">1</text>
+<circle class="node" cx="425" cy="470" r="30"/>
+<text class="nlabel" x="425" y="478" text-anchor="middle">2</text>
+<circle class="node" cx="680" cy="470" r="30"/>
+<text class="nlabel" x="680" y="478" text-anchor="middle">3</text>
+<circle class="node" cx="935" cy="470" r="30"/>
+<text class="nlabel" x="935" y="478" text-anchor="middle">4</text>
+<circle class="node" cx="1190" cy="470" r="30"/>
+<text class="nlabel" x="1190" y="478" text-anchor="middle">5</text>
+<circle class="node" cx="1445" cy="470" r="30"/>
+<text class="nlabel" x="1445" y="478" text-anchor="middle">6</text>
+<circle class="node" cx="1700" cy="470" r="30"/>
+<text class="nlabel" x="1700" y="478" text-anchor="middle">7</text>
+<circle class="node" cx="1955" cy="470" r="30"/>
+<text class="nlabel" x="1955" y="478" text-anchor="middle">8</text>
+<circle class="node" cx="2210" cy="470" r="30"/>
+<text class="nlabel" x="2210" y="478" text-anchor="middle">9</text>
+<circle class="node" cx="2465" cy="470" r="30"/>
+<text class="nlabel" x="2465" y="478" text-anchor="middle">10</text>
+</svg>

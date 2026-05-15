@@ -94,8 +94,7 @@ class ControlModule:
         matrix_P[2][n_states - 1][n_states - 1] += probs_increase[1] + probs_increase[2]
 
         
-        print("Probabilidades:\n")
-        print(matrix_P)
+
         """
         [[[0.8   0.    0.    0.    0.    0.    0.    0.    0.    0.   ]
         [0.025 0.8   0.    0.    0.    0.    0.    0.    0.    0.   ]
@@ -137,7 +136,6 @@ class ControlModule:
     def generate_R(demand_t: np.float64, n_states: np.int32 = 100) -> np.ndarray:
         """Function that generates the rewards (costs) matrix"""
         demand = np.float64(demand_t) # Debug
-        print("Demanda:", demand)
 
         matrix_R = np.zeros((3, n_states, n_states), dtype=np.float64) # (3x)100x100
         # quitar DEBUGGING
@@ -210,9 +208,7 @@ class ControlModule:
 
                 matrix_R[2][estado_inicial][estado_final] = -coste
 
-        print()
-        print("DEMANDA ACTUAL: ", demand)
-        print(matrix_R)
+
 
         # Creamos unos tests
         # print()
@@ -282,22 +278,28 @@ class ControlModule:
 
         # -- Comprobacion provisional de si la matriz P es estocastica
         # La última fila tiene todo ceros, rellenamos con uno en la posicion final
-        P[2][-1][-1] = 1
-
-        for a in range(3):
-            P[a] = P[a] / P[a].sum(axis=1, keepdims=True)  # renormaliza # Cambiar si hay tiempo, en vez de distribuir las probabilidades uniformemente, truncarlas a los bordes
-
         # print()
         # print("P normalizada\n", P)
         # print(check_stochastic(P))
         # print()
-
+        """
         #politica optima con la libreria .... 
         pi = mdptoolbox.mdp.PolicyIteration(P, R, gamma, max_iter=max_iter)
         pi.setVerbose()
         pi.run()
         print("Policy: ", pi.policy)
-        return pi.policy[estado_actual]
+        return pi.policy[estado_actual]"""
+    
+        mdp = mdptoolbox.mdp.ValueIteration(
+            transitions=P,
+            reward=R,
+            discount=gamma,
+            max_iter=max_iter
+        )
+
+        mdp.run()
+
+        return np.int32(mdp.policy[estado_actual])
 
 
 
@@ -309,9 +311,7 @@ class ControlModule:
                     gamma: np.float64,) -> np.ndarray:
         
         """Function that computes all the required iterations (control-loop) to satisfy the power demand"""
-        ControlModule._probs = probs          
-        ControlModule._n_states = n_states    
-        ControlModule._n_actions = n_actions  
+
 
         respuesta = np.zeros_like(a=demand, dtype=np.float64)  # Almacena las acciones para cada demanda
         current_state = np.int32(0)  # Estado inicial, se puede modificar si se desea empezar en otro estado
@@ -325,15 +325,15 @@ class ControlModule:
             ControlModule._current_state = current_state 
 
             ControlModule._R = ControlModule.generate_R(ControlModule._demand_t, n_states) # esta demanda concreta.
-            action = ControlModule.control_iteration(P= ControlModule._P, R= ControlModule._R, current_state = ControlModule._current_state, gamma=gamma)
+            action = ControlModule.control_iteration(P= ControlModule._P, R= ControlModule._R, estado_actual = ControlModule._current_state, gamma=gamma)
 
             state_increment = np.random.choice( a=action_deltas[action], p=probs[action])
             current_state = current_state + state_increment
             current_state = np.int32(np.clip(a=current_state, a_min=0, a_max=n_states - 1))
-            respuesta[t] = current_state / 100.0
+            respuesta[t] = current_state / n_states
         return respuesta
 
-
+"""
 def check_stochastic(P, tol=1e-6):
 
     P = np.array(P)
@@ -353,5 +353,5 @@ def check_stochastic(P, tol=1e-6):
         print("❌ Matriz NO estocástica.")
     return ok
 
-
+""" 
 

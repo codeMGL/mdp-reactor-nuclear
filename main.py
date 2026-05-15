@@ -69,7 +69,7 @@ def main() -> None:
     )
 
     # Make a radar-plot with the reactor probabilities
-    plot_reactor_as_radar(probs=probs)
+    # plot_reactor_as_radar(probs=probs)
 
     # Generate a random power demand
     demand = generate_demand(n_samples=512)

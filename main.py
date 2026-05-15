@@ -74,20 +74,23 @@ def main() -> None:
     # plot_reactor_as_radar(probs=probs)
 
     # Generate a random power demand
-    # demand = generate_demand(n_samples=512)
-    # print("Demand:\n", demand)  # Array con 512 demands
+    # Generate a random power demand
+    demand = generate_demand(n_samples=512)
+    # print("Demand:\n", demand)
 
     estado_actual = 5
-    # demand = 0.02
-    # for i in range(0, 100, 20):
     i = 90
     if True:
-        demand = i / 100
-        matriz_R = ControlModule.generate_R(demand)
+        demand_test = i / 100
+        matriz_R = ControlModule.generate_R(demand_test)
 
-        # Ejecutamos para un solo estado
-        response = ControlModule.control_iteration(matriz_P, matriz_R, estado_actual, gamma)
-        print("Response 'unitaria':", response)
+        response_test = ControlModule.control_iteration(
+            matriz_P,
+            matriz_R,
+            estado_actual,
+            gamma
+        )
+        print("Response 'unitaria':", response_test)
 
     # Define the number of MDP's states, actions and the discount factor (gamma)
     n_states = 100

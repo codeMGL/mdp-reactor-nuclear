@@ -9,7 +9,7 @@ from Metrics import *
 from Plotter import *
 
 
-def get_args() -> tuple[Reactor, np.float64, np.float64]:  # 3 salidas (?)
+def get_args() -> tuple[Reactor, np.float64, np.float64]:
     # Define the parser object
     parser = argparse.ArgumentParser()
 
@@ -45,7 +45,7 @@ def get_args() -> tuple[Reactor, np.float64, np.float64]:  # 3 salidas (?)
         )
 
     # Some verbose of the reactor loaded
-    print(reactor)  # Overloaded in the __str__ method of Reactor's class
+    print(reactor)
 
     # Return the Reactor object, gamma and the random seed
     return reactor, args.gamma, args.random_seed
@@ -68,40 +68,24 @@ def main() -> None:
         dtype=np.float64,
     )
 
-    matriz_P = ControlModule.generate_P(probs, 100)
-
     # Make a radar-plot with the reactor probabilities
-    # plot_reactor_as_radar(probs=probs)
+    plot_reactor_as_radar(probs=probs)
 
-    # Generate a random power demand
     # Generate a random power demand
     demand = generate_demand(n_samples=512)
-    # print("Demand:\n", demand)
 
-    estado_actual = 5
-    i = 90
-    if True:
-        demand_test = i / 100
-        matriz_R = ControlModule.generate_R(demand_test)
-
-        response_test = ControlModule.control_iteration(
-            matriz_P,
-            matriz_R,
-            estado_actual,
-            gamma
-        )
-        print("Response 'unitaria':", response_test)
-
-    # Define the number of MDP's states, actions and the discount factor (gamma)
+    # Define the number of MDP's states and actions
     n_states = 100
     n_actions = 3
 
     # Get the response time-series (answer to the demand time-series)
     response = ControlModule.control_loop(
-        demand=demand, probs=probs, n_states=n_states, n_actions=n_actions, gamma=gamma
+        demand=demand,
+        probs=probs,
+        n_states=n_states,
+        n_actions=n_actions,
+        gamma=gamma,
     )
-
-    # print("Response:\n", response)  # Array con 512 respuestas
 
     # Plot the original power demand
     plot_demand(demand=demand)

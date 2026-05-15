@@ -45,5 +45,7 @@ class Reactor:
     
     def compute_control_bars_insertion(self, power: np.float64) -> np.float64:
         """ Computes the % of controls-bars inserted based on the % of power delivered by the reactor """
-        ### TO BE COMPLETED BY THE STUDENTS ###
-
+        min_power = 10**-6 / self.max_power
+        power = np.clip(a=power, a_min=min_power, a_max=1.0)
+        insertion = -np.log(power) / self.k
+        return np.float64(np.clip(a=insertion, a_min=0.0, a_max=1.0))
